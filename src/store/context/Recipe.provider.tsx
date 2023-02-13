@@ -11,9 +11,9 @@ const RecipeContextProvider: FC<RecipeContextProviderProps> = ({
 }) => {
   const [recipes, dispatch] = useReducer(recipeReducer, []);
   return (
-    <RecipeContext.Provider
-      value={{ recipes, dispatch }}
-    ></RecipeContext.Provider>
+    <RecipeContext.Provider value={{ recipes, dispatch }}>
+      {children}
+    </RecipeContext.Provider>
   );
 };
 

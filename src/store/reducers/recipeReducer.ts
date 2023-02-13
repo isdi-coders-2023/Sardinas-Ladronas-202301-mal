@@ -7,7 +7,7 @@ const recipeReducer = (
 ): Recipe[] => {
   switch (action.type) {
     case ActionTypes.LIST_RECIPES:
-      return [...previousRecipes];
+      return [...previousRecipes, ...action.payload];
   }
 };
 

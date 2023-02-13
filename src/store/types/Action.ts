@@ -1,9 +1,12 @@
+import { Recipe } from '../../models/recipe.r';
+
 export enum ActionTypes {
   LIST_RECIPES = 'listRecipes',
 }
 
-type CardAction = {
+type RecipeAction = {
   type: ActionTypes.LIST_RECIPES;
+  payload: Recipe[];
 };
 
-export default CardAction;
+export default RecipeAction;
