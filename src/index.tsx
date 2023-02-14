@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import RecipeContextProvider from './store/context/Recipe.provider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  <RecipeContextProvider>
     <App />
-  </React.StrictMode>
+  </RecipeContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
