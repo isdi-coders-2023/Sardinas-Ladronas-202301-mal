@@ -1,0 +1,61 @@
+.recipe-card {
+  width: 200px;
+  position: relative;
+  border: #f8693a solid 1px;
+}
+
+.recipe-card__img {
+  width: 200px;
+}
+
+.recipe-card__title {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+
+.recipe-card__heart {
+  position: absolute;
+  left: 10rem;
+  top: 1rem;
+}
+
+/* STARS */
+
+.recipe-card__rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  height: 36px;
+}
+.recipe-card__rating:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.recipe-card__rating:not(:checked) > label {
+  float: left;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 25px;
+  color: #ccc;
+}
+.recipe-card__rating:not(:checked) > label:before {
+  content: "★ ";
+}
+.recipe-card__rating > input:checked ~ label {
+  color: #ff642f;
+}
+.recipe-card__rating:not(:checked) > label:hover,
+.recipe-card__rating:not(:checked) > label:hover ~ label {
+  color: #ff642f;
+}
+.recipe-card__rating > input:checked + label:hover,
+.recipe-card__rating > input:checked + label:hover ~ label,
+.recipe-card__rating > input:checked ~ label:hover,
+.recipe-card__rating > input:checked ~ label:hover ~ label,
+.recipe-card__rating > label:hover ~ input:checked ~ label {
+  color: #f8693a;
+}
