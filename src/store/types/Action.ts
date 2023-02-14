@@ -1,11 +1,11 @@
 import { Recipe } from '../../models/recipe.r';
 
 export enum ActionTypes {
-  LIST_RECIPES = 'listRecipes',
+  GET_RECIPES_BY_LETTER = 'listRecipes',
 }
 
 type RecipeAction = {
-  type: ActionTypes.LIST_RECIPES;
+  type: ActionTypes.GET_RECIPES_BY_LETTER;
   payload: Recipe[];
 };
 
