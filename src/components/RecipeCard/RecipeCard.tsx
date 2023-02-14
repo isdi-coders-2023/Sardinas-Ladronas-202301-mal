@@ -9,11 +9,8 @@ interface RecipeCard {
 const Card: FC<RecipeCard> = ({ recipe }) => {
   return (
     <>
-      <img
-        className="recipe-card__heart"
-        src="/assets/img/icons/empty-heart.svg"
-        alt="heart icon"
-      />
+      <i className="fa-sharp fa-regular fa-heart"></i>
+      <i className="fa-sharp fa-solid fa-heart"></i>
       <img
         className="recipe-card__img"
         src={recipe.strMealThumb}
