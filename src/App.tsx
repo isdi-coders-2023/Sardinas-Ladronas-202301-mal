@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Card from './components/Card/Card';
-
+import RecipeCardList from './components/RecipeCardList/RecipeCardList';
+import { provisionalData } from './data';
 function App() {
   return (
     <div className="app-container">
-      <Card />
+      <RecipeCardList recipeList={provisionalData} />
     </div>
   );
 }
