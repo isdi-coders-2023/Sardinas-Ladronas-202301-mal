@@ -9,6 +9,7 @@ function App() {
   }, []);
   return (
     <>
+      <>{console.log(recipes)}</>
       <div>hola</div>
     </>
   );
