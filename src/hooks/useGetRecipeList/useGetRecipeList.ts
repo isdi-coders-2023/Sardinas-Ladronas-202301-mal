@@ -7,12 +7,12 @@ export default function useGetRecipeList() {
 
   const getRecipeList = async () => {
     const response = await fetch(
-      'http://www.themealdb.com/api/json/v1/1/search.php?s=Burek'
+      'https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata'
     );
     const recipesResponse = await response.json();
 
     const recipeAction = {
-      type: ActionTypes.LIST_RECIPES,
+      type: ActionTypes.GET_RECIPES_BY_LETTER,
       payload: recipesResponse.meals,
     };
     dispatch(recipeAction);
