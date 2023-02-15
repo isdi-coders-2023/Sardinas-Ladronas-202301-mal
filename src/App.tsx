@@ -1,16 +1,9 @@
 import React from 'react';
-import './App.css';
-import RecipeCardList from './components/RecipeCardList/RecipeCardList';
-import { provisionalData } from './data';
-import NavBar from './components/NavBar/NavBar';
+import { router } from './router/app-router';
+import { RouterProvider } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="app-container">
-      <NavBar />
-      <RecipeCardList recipeList={provisionalData} />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
