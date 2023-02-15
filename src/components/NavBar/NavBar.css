@@ -16,11 +16,11 @@
 }
 
 .site-bar {
-  font-family: "Inter";
+  font-family: var(--secondary-font-bold);
 }
 
 .navigation-bar ul {
-  font-family: "Inter";
+  font-family: var(--secondary-font-bold);
   font-style: normal;
   font-weight: 700;
   color: black;
@@ -31,7 +31,7 @@
 }
 
 .navigation-bar a {
-  font-family: "Inter";
+  font-family: var(--secondary-font-bold);
   color: inherit;
   height: 100%;
   display: flex;
