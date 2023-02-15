@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
-import MyRecipes from './MyRecipes';
+import MainLayout from './MainLayout';
 
 test('render page', () => {
-  render(<MyRecipes />);
+  render(<MainLayout />);
   expect(true).toBe(true);
 });
