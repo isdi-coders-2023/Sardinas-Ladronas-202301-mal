@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import RecipeCardList from '../../components/RecipeCardList/RecipeCardList';
-import { provisionalData } from '../../data';
+import useGetRecipeList from '../../hooks/useGetRecipeList/useGetRecipeList';
 
 const Home = () => {
-  return <RecipeCardList recipeList={provisionalData} />;
+  const { recipes, getRecipeList } = useGetRecipeList();
+  useEffect(() => {
+    getRecipeList();
+  }, []);
+  return <RecipeCardList recipeList={recipes} />;
 };
 
 export default Home;
