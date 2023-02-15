@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Pagination from '../../components/Pagination/Pagination';
 import RecipeCardList from '../../components/RecipeCardList/RecipeCardList';
 import useGetRecipeList from '../../hooks/useGetRecipeList/useGetRecipeList';
 
@@ -7,7 +8,12 @@ const Home = () => {
   useEffect(() => {
     getRecipeList();
   }, []);
-  return <RecipeCardList recipeList={recipes} />;
+  return (
+    <>
+      <Pagination />
+      <RecipeCardList recipeList={recipes} />
+    </>
+  );
 };
 
 export default Home;
