@@ -9,6 +9,7 @@ export const handlers = [
         ctx.json({
           meals: [
             {
+              idMeal: '1',
               strMeal: 'Torrijas',
               strInstructions: 'Coges el pan, lo metes en leche y lo fríes',
               strMealThumb: 'images/torrijas.png',
