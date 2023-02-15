@@ -3,11 +3,12 @@ import { Recipe } from './models/recipe.r';
 export const provisionalData: Recipe[] = [
   {
     idMeal: '1',
-    strMeal: 'Torrijas',
+    strMeal: 'Espaguetis',
     strCategory: 'dessert',
     strArea: 'Spain',
     strInstructions: 'Coges el pan, lo metes en leche y lo fríes',
-    strMealThumb: 'images/torrijas.png',
+    strMealThumb:
+      'https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg',
     strIngredient1: 'leche',
     strIngredient2: 'cacao',
     strIngredient3: 'avellanas',
@@ -41,11 +42,12 @@ export const provisionalData: Recipe[] = [
   },
   {
     idMeal: '2',
-    strMeal: 'Torrijas',
+    strMeal: 'Sushi',
     strCategory: 'dessert',
     strArea: 'Spain',
     strInstructions: 'Coges el pan, lo metes en leche y lo fríes',
-    strMealThumb: 'images/torrijas.png',
+    strMealThumb:
+      'https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg',
     strIngredient1: 'leche',
     strIngredient2: 'cacao',
     strIngredient3: 'avellanas',
