@@ -15,7 +15,7 @@ export default function useGetRecipeList() {
     const recipesResponse = await response.json();
 
     if (recipesResponse.meals === null) {
-      console.log('hola');
+      // console.log('');
     } else {
       const recipeAction = {
         type: ActionTypes.GET_RECIPES_BY_LETTER,
