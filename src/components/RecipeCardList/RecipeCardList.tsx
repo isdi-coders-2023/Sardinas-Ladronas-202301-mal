@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Recipe } from '../RecipeCard/recipe.model';
+import { Recipe } from '../../models/recipe.r';
 import RecipeCard from '../RecipeCard/RecipeCard';
 import './RecipeCardList.css';
 interface RecipeList {
@@ -9,8 +9,8 @@ interface RecipeList {
 const CardList: FC<RecipeList> = ({ recipeList }) => {
   return (
     <ul className="recipe-cards">
-      {recipeList.map((recipe, index) => (
-        <li className="recipe-card" key={index}>
+      {recipeList.map((recipe) => (
+        <li className="recipe-card" key={recipe.idMeal}>
           <RecipeCard recipe={recipe} />
         </li>
       ))}

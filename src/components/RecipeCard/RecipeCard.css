@@ -10,7 +10,7 @@
 }
 
 .recipe-card__title {
-  font-family: "Inter";
+  font-family: var(--main-font-regular);
   font-weight: 400;
   font-size: 1.3rem;
   margin-top: 0.5rem;

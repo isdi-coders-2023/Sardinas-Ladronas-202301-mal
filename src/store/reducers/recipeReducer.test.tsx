@@ -7,6 +7,7 @@ describe('Given a reducer function', () => {
       recipeReducer(
         [
           {
+            idMeal: '1',
             strMeal: 'Torrijas',
             strInstructions: 'Coges el pan, lo metes en leche y lo fríes',
             strMealThumb: 'images/torrijas.png',
@@ -19,6 +20,7 @@ describe('Given a reducer function', () => {
       )
     ).toEqual([
       {
+        idMeal: '1',
         strMeal: 'Torrijas',
         strInstructions: 'Coges el pan, lo metes en leche y lo fríes',
         strMealThumb: 'images/torrijas.png',

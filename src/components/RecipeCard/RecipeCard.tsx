@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
+import { Recipe } from '../../models/recipe.r';
 import './RecipeCard.css';
-import { Recipe } from './recipe.model';
 
 interface RecipeCard {
   recipe: Recipe;

@@ -20,6 +20,7 @@ describe('Given a useGetRecipeList hook', () => {
     await act(async () => result.current.getRecipeList());
     expect(result.current.recipes).toEqual([
       {
+        idMeal: '1',
         strMeal: 'Torrijas',
         strInstructions: 'Coges el pan, lo metes en leche y lo fríes',
         strMealThumb: 'images/torrijas.png',
