@@ -1,9 +1,9 @@
 import React from 'react';
 import RecipeCardList from '../../components/RecipeCardList/RecipeCardList';
-import { provisionalData } from '../../data';
+import { meal } from '../../mocks/mealMock';
 
 const Home = () => {
-  return <RecipeCardList recipeList={provisionalData} />;
+  return <RecipeCardList recipeList={meal.meals} />;
 };
 
 export default Home;
