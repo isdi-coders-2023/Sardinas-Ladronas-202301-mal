@@ -19,6 +19,5 @@ export default function useGetRecipeList() {
     };
     dispatch(recipeAction);
   }, [dispatch, letter]);
-
   return { recipes, getRecipeList };
 }
