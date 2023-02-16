@@ -7,7 +7,7 @@ const Home = () => {
   const { recipes, getRecipeList } = useGetRecipeList();
   useEffect(() => {
     getRecipeList();
-  }, []);
+  }, [getRecipeList]);
   return (
     <>
       <Pagination />

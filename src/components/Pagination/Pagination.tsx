@@ -36,7 +36,9 @@ const Pagination = () => {
       <ul className="pagination__letters">
         {alphabetLetters.map((letter) => (
           <li key={letter} className="pagination__letter">
-            <a href={`/${letter}`}>{letter}</a>
+            <a data-testid={letter} href={`/${letter}`}>
+              {letter}
+            </a>
           </li>
         ))}
       </ul>
