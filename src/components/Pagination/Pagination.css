@@ -1,0 +1,11 @@
+.pagination {
+  width: 100%;
+  text-align: center;
+}
+.pagination__letters {
+  display: flex;
+  gap: 2rem;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 0 2rem;
+}

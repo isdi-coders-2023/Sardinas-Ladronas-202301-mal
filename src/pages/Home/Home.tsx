@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Pagination from '../../components/Pagination/Pagination';
 import RecipeCardList from '../../components/RecipeCardList/RecipeCardList';
-import { meal } from '../../mocks/mealMock';
+import useGetRecipeList from '../../hooks/useGetRecipeList/useGetRecipeList';
 
 const Home = () => {
-  return <RecipeCardList recipeList={meal.meals} />;
+  const { recipes, getRecipeList } = useGetRecipeList();
+  useEffect(() => {
+    getRecipeList();
+  }, [getRecipeList]);
+  return (
+    <>
+      <Pagination />
+      <RecipeCardList recipeList={recipes} />
+    </>
+  );
 };
 
 export default Home;
