@@ -1,0 +1,9 @@
+import React from 'react';
+import DetailHeader from '../../components/DetailHeader/DetailHeader';
+import { meal } from '../../mocks/mealMock';
+
+const Detail = () => {
+  return <DetailHeader recipe={meal.meals[0]} />;
+};
+
+export default Detail;
