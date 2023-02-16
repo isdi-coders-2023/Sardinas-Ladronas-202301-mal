@@ -1,5 +1,40 @@
-.instructions-container__title {
+.detail {
+  padding: 4% 5%;
+}
+
+.detail__instructions h2 {
   color: black;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: var(--main-font-regular);
+}
+.detail__instructions {
+  font-size: 1.5rem;
+  font-family: var(--secondary-font-regular);
+}
+
+.detail__data {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+
+  font-family: var(--secondary-font-regular);
+}
+.data__ingredients {
+}
+.ingredient {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.1rem;
+  text-transform: capitalize;
+}
+.data__measures {
+  font-family: var(--secondary-font-bold);
+}
+.measure {
+  width: 100px;
+  padding: 0.1rem;
 }
