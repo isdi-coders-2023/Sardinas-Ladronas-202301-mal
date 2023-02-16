@@ -14,6 +14,6 @@ const Home = () => {
       <RecipeCardList recipeList={recipes} />
     </>
   );
-};
+  };
 
 export default Home;

@@ -28,7 +28,8 @@ describe('Given a useGetRecipeList hook', () => {
         strCategory: 'dessert',
         strArea: 'Spain',
         strInstructions: 'Coges el pan, lo metes en leche y lo fríes',
-        strMealThumb: 'images/torrijas.png',
+        strMealThumb:
+          'https://www.themealdb.com/images/media/meals/tnwy8m1628770384.jpg',
         strIngredient1: 'leche',
         strIngredient2: 'cacao',
         strIngredient3: 'avellanas',
