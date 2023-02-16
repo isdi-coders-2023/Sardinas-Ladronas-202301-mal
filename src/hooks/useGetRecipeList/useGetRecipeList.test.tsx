@@ -1,6 +1,5 @@
-import { act, render, renderHook, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import Pagination from '../../components/Pagination/Pagination';
+import { act, renderHook } from '@testing-library/react';
+
 import { server } from '../../mocks/server';
 import RecipeContextProvider from '../../store/context/Recipe.provider';
 import useGetRecipeList from './useGetRecipeList';
