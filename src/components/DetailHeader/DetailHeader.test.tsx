@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import RecipeCard from './RecipeCard';
+import DetailHeader from './DetailHeader';
 import { meal } from '../../mocks/mealMock';
 
 describe('Given a recipe card component', () => {
   test('When card is rendered, it should show a recipe img', () => {
-    render(<RecipeCard recipe={meal.meals[0]} />);
+    render(<DetailHeader recipe={meal.meals[0]} />);
     const imgElement = screen.getByAltText('recipe img');
     const titleElement = screen.getByRole('heading');
 
