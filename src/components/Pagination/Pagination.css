@@ -1,7 +1,7 @@
 .pagination {
   width: 100%;
   text-align: center;
-  padding: 0 19.2px;
+  padding: 0 5%;
 }
 .pagination__letters {
   width: 100%;
@@ -13,12 +13,14 @@
   overflow: scroll;
 }
 
-a {
+.pagination__letter {
   color: #ff642f;
   font-size: larger;
 }
 
-a.click {
+.pagination__letter_clicked {
+  color: #ff642f;
+  font-size: larger;
   font-weight: bold;
 }
 
