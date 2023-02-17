@@ -14,7 +14,7 @@ export default function useGetRecipeList() {
     const recipesResponse = await response.json();
 
     const recipeAction = {
-      type: ActionTypes.GET_RECIPES_BY_LETTER,
+      type: ActionTypes.LIST_RECIPES_BY_LETTER,
       payload: recipesResponse.meals,
     };
     dispatch(recipeAction);

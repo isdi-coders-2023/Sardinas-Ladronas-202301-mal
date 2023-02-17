@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Pagination.css';
 
 const alphabetLetters = [
@@ -34,11 +35,11 @@ const Pagination = () => {
   return (
     <div className="pagination">
       <ul className="pagination__letters">
-        {alphabetLetters.map((letter) => (
-          <li key={letter} className="pagination__letter">
-            <a data-testid={letter} href={`/${letter}`}>
+        {alphabetLetters.map((letter, i) => (
+          <li key={letter}>
+            <Link to={`/recipes/${letter}`} className="pagination__letter">
               {letter}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
