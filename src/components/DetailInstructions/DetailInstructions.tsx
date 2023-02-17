@@ -46,7 +46,7 @@ const DetailInstructions: FC<RecipeCard> = ({ recipe }) => {
         <img
           width={70}
           src={`/assets/img/flags/${recipe.strArea}.png`}
-          alt={`AstrArea: ${recipe.strArea}`}
+          alt={`Area: ${recipe.strArea}`}
         />
       </article>
     </section>
