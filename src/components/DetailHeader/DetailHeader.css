@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   width: 100%;
-  max-height: 400px;
+  max-height: 600px;
   padding: 4% 5%;
 }
 
@@ -17,9 +17,9 @@
   color: white;
   position: absolute;
   left: 10%;
-  bottom: 15%;
+  bottom: 20%;
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 5rem;
   z-index: 20;
 }
 
@@ -42,5 +42,8 @@
     width: 100%;
     max-height: 400px;
     padding: 4% 0%;
+  }
+  .header-container__title {
+    font-size: 3rem;
   }
 }
