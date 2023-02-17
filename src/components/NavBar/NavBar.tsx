@@ -59,20 +59,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-/* <img src="/assets/img/icons/menu.svg" alt="menu logo" /> */
-
-/* <div className="navigation-bar__menu"></div> */
-//  <ul className="navigation-bar__logo-active">
-//       <li>
-//         <a href="/" className="site-bar">
-//           Homepage
-//         </a>
-//       </li>
-//       <li>
-//         <a href="/myrecipes">My recipes</a>
-//       </li>
-//       // <li className="arrow">
-//       //   <a href="/categories">Categories</a>
-//       //   <i className="fa-sharp fa-solid fa-chevron-down"></i>
-//       // </li>;
