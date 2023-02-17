@@ -73,7 +73,7 @@
 
   .nav-text {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     list-style: none;
     height: 30px;
@@ -99,7 +99,6 @@
   }
 
   .nav-menu__items.active {
-    /* width: 50%; */
     width: 25%;
     height: 19%;
     position: fixed;
