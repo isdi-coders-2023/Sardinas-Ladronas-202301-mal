@@ -1,17 +1,12 @@
 import { FC } from 'react';
 import { Recipe } from '../../models/recipe.r';
+import DetailReagents from '../DetailReagents/DetailReagents';
 import './DetailInstructions.css';
-import * as GoIcons from 'react-icons/go';
 interface RecipeCard {
   recipe: Recipe[];
 }
 
 const DetailInstructions: FC<RecipeCard> = ({ recipe }) => {
-  // {
-  //   const returnedData = Object.entries(recipe[0])
-  //     .filter((elem) => elem[0].includes('Ingredient') && elem[1] !== '')
-  //     .map((recipeIng) => console.log(recipeIng));
-  // }
   return (
     <section className="detail">
       <article className="detail__instructions">
@@ -20,41 +15,8 @@ const DetailInstructions: FC<RecipeCard> = ({ recipe }) => {
       </article>
 
       <article className="detail__data">
-        <div className="detail__reagents">
-          <div className="data__ingredients">
-            {recipe[0] !== undefined
-              ? Object.entries(recipe[0])
-                  .filter(
-                    (elem) =>
-                      elem[0].includes('Ingredient') &&
-                      elem[1] !== '' &&
-                      elem[1] !== null
-                  )
-                  .map((recipeIng) => (
-                    <div key={recipeIng[0]} className="ingredient">
-                      <GoIcons.GoPrimitiveDot />
-                      <p>{recipeIng[1]}</p>
-                    </div>
-                  ))
-              : Object.entries([])}
-          </div>
-          <div className="data__measures">
-            {recipe[0] !== undefined
-              ? Object.entries(recipe[0])
-                  .filter(
-                    (elem) =>
-                      elem[0].includes('Measure') &&
-                      elem[1] !== '' &&
-                      elem[1] !== null
-                  )
-                  .map((recipeIng) => (
-                    <div key={recipeIng[0]} className="measure">
-                      <p>{recipeIng[1]}</p>
-                    </div>
-                  ))
-              : Object.entries([])}
-          </div>
-        </div>
+        <DetailReagents recipe={recipe} />
+
         <article className="detail__category">
           <h3>{recipe[0]?.strCategory}</h3>
           <img
