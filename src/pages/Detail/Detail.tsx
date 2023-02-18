@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import DetailHeader from '../../components/DetailHeader/DetailHeader';
 import DetailInstructions from '../../components/DetailInstructions/DetailInstructions';
-import { meal } from '../../mocks/mealMock';
+import useGetDetail from '../../hooks/useGetDetail/useGetDetail';
 
 const Detail = () => {
+  const { recipes, getDetail } = useGetDetail();
+  useEffect(() => {
+    getDetail();
+  }, [getDetail]);
+
   return (
     <>
-      <DetailHeader recipe={meal.meals[0]} />
-      <DetailInstructions recipe={meal.meals[0]} />
+      <DetailHeader recipes={recipes} />
+      <DetailInstructions recipe={recipes} />
     </>
   );
 };

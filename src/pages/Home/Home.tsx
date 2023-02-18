@@ -8,6 +8,7 @@ const Home = () => {
   useEffect(() => {
     getRecipeList();
   }, [getRecipeList]);
+
   return (
     <>
       <Pagination />
