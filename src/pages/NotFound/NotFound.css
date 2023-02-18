@@ -1,3 +1,92 @@
-h1 {
-  color: orange;
+* {
+  background-color: #e8e8e8;
+}
+
+.page-error {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-error img {
+  height: 700px;
+  width: 550px;
+  object-fit: cover;
+}
+
+@keyframes myanimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.page-error h1 {
+  font-family: var(--secondary-font-bold);
+  color: #2e2f37;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  margin: 50px 0 0 0;
+  position: absolute;
+  top: -3%;
+}
+
+.page-error p {
+  font-family: var(--secondary-font-bold);
+  color: #2e2f37;
+  font-size: 2rem;
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  top: 10%;
+}
+
+.page-error a {
+  font-family: var(--secondary-font-bold);
+  color: #2e2f37;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 10%;
+  animation: myanimation;
+  animation-duration: 2s;
+}
+
+@media screen and (max-width: 376px) {
+  .page-error h1 {
+    width: 39%;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -7%;
+  }
+  .page-error p {
+    width: 100%;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 8%;
+  }
+
+  .page-error {
+    position: absolute;
+    left: 55%;
+    top: 65%;
+  }
+  .page-error img {
+    width: 20rem;
+    height: 30rem;
+  }
+  .page-error a {
+    width: 38%;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 10%;
+  }
 }
