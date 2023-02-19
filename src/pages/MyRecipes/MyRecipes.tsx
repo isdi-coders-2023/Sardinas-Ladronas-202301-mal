@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import FavRecipeCardList from '../../components/FavRecipeCardList/FavRecipeCardList';
 import Pagination from '../../components/Pagination/Pagination';
 
