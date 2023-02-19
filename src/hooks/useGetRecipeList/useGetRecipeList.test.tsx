@@ -21,6 +21,7 @@ describe('Given a useGetRecipeList hook', () => {
     await act(async () => result.current.getRecipeList());
     expect(result.current.recipes).toEqual([
       {
+        id: '',
         idMeal: '1',
         strMeal: 'Torrijas',
         strCategory: 'dessert',

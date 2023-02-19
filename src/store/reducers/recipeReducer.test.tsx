@@ -7,6 +7,7 @@ describe('Given a reducer function', () => {
       recipeReducer(
         [
           {
+            id: '',
             idMeal: '1',
             strMeal: 'Torrijas',
             strCategory: 'dessert',
@@ -43,7 +44,6 @@ describe('Given a reducer function', () => {
             strMeasure13: '',
             strMeasure14: '',
             strMeasure15: '',
-            id: '',
           },
         ],
         {
@@ -53,6 +53,7 @@ describe('Given a reducer function', () => {
       )
     ).toEqual([
       {
+        id: '',
         idMeal: '1',
         strMeal: 'Torrijas',
         strCategory: 'dessert',
