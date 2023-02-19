@@ -10,7 +10,7 @@ const CardList: FC<RecipeList> = ({ recipeList }) => {
   return (
     <ul className="recipe-cards">
       {recipeList.map((recipe) => (
-        <li className="recipe-card" key={recipe.idMeal}>
+        <li className="recipe-card" key={recipe?.idMeal}>
           <RecipeCard recipe={recipe} />
         </li>
       ))}

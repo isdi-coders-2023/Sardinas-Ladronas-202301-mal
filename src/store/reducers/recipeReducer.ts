@@ -6,8 +6,10 @@ const recipeReducer = (
   action: RecipeAction
 ): Recipe[] => {
   switch (action.type) {
+    case ActionTypes.ADD_FAVOURITES_RECIPES:
+      return [...previousRecipes];
     case ActionTypes.LIST_RECIPES_BY_LETTER:
-      return [...action.payload];
+      return [...action?.payload];
     default:
       return [...previousRecipes];
   }

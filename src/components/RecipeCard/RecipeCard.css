@@ -23,17 +23,6 @@
   color: #f8693a;
   font-size: 1.8rem;
 }
-.fa-solid {
-  opacity: 0;
-}
-
-.fa-regular:hover {
-  opacity: 0;
-}
-
-.fa-solid:hover {
-  opacity: 100;
-}
 
 /* STARS */
 
