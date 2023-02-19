@@ -49,7 +49,7 @@
   display: none;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 426px) {
   .nav-bar {
     height: 160px;
   }
@@ -101,7 +101,7 @@
   .nav-menu__items.active {
     width: 25%;
     height: 19%;
-    position: fixed;
+    position: absolute;
     left: 38%;
     display: flow-root;
     font-size: 0.9rem;
