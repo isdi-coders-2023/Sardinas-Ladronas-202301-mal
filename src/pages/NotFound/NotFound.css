@@ -1,4 +1,4 @@
-* {
+body {
   background-color: #e8e8e8;
 }
 
@@ -17,6 +17,8 @@
   height: 700px;
   width: 550px;
   object-fit: cover;
+  animation: myanimation;
+  animation-duration: 2s;
 }
 
 @keyframes myanimation {
@@ -55,8 +57,6 @@
   font-size: 2rem;
   position: absolute;
   bottom: 10%;
-  animation: myanimation;
-  animation-duration: 2s;
 }
 
 @media screen and (max-width: 376px) {
