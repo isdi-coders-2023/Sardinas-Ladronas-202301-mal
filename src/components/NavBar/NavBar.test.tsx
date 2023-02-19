@@ -9,7 +9,7 @@ describe('Given a recipe Navigation Bar component', () => {
     const imageElement = screen.getByRole('img');
     const linkElementsList = screen.getAllByRole('link');
     expect(imageElement).toBeInTheDocument();
-    expect(linkElementsList.length).toEqual(5);
+    expect(linkElementsList.length).toEqual(4);
   });
   test('When user click hamburguer menu, Then it should change the className', () => {
     render(<NavBar />, { wrapper: MemoryRouter });

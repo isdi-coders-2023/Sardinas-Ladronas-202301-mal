@@ -9,9 +9,4 @@ export const SidebarData = [
     path: '/myrecipes',
     cName: 'nav-text',
   },
-  {
-    title: 'Categories',
-    path: '/categories',
-    cName: 'nav-text',
-  },
 ];
