@@ -8,7 +8,7 @@ interface RecipeCard {
 }
 
 const FavCard: FC<RecipeCard> = ({ recipe }) => {
-  const { recipes, removeRecipe } = useRemoveRecipes(recipe);
+  const { removeRecipe } = useRemoveRecipes(recipe);
 
   return (
     <>

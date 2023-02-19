@@ -8,7 +8,7 @@ interface RecipeCard {
 }
 
 const Card: FC<RecipeCard> = ({ recipe }) => {
-  const { recipes, addRecipe } = useAddFavRecipes(recipe);
+  const { addRecipe } = useAddFavRecipes(recipe);
   const [clicked, setClicked] = useState(false);
   const showClicked = () => {
     setClicked(!clicked);
