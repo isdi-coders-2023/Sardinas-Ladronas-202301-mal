@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import FavRecipeCardList from '../../components/FavRecipeCardList/FavRecipeCardList';
 import Pagination from '../../components/Pagination/Pagination';
-import RecipeCardList from '../../components/RecipeCardList/RecipeCardList';
 
 import useGetFavRecipes from '../../hooks/useGetFavRecipes/useGetFavRecipes';
 
@@ -12,7 +12,7 @@ const MyRecipes = () => {
   return (
     <>
       <Pagination />
-      <RecipeCardList recipeList={recipes} />
+      <FavRecipeCardList recipeList={recipes} />
     </>
   );
 };

@@ -1,26 +1,23 @@
-import React, { FC, useState } from 'react';
-import useAddFavRecipes from '../../hooks/useAddFavRecipes/useFavRecipes';
+import React, { FC } from 'react';
+import useRemoveRecipes from '../../hooks/useRemoveFavRecipes/useRemoveRecipes';
 import { Recipe } from '../../models/recipe.r';
-import './RecipeCard.css';
+import './FavRecipeCard.css';
 
 interface RecipeCard {
   recipe: Recipe;
 }
 
-const Card: FC<RecipeCard> = ({ recipe }) => {
-  const { recipes, addRecipe } = useAddFavRecipes(recipe);
-  const [clicked, setClicked] = useState(false);
-  const showClicked = () => {
-    setClicked(!clicked);
-  };
+const FavCard: FC<RecipeCard> = ({ recipe }) => {
+  const { recipes, removeRecipe } = useRemoveRecipes(recipe);
+
   return (
     <>
       <i
-        onClick={() => {
-          showClicked();
-          addRecipe();
+        onClick={async () => {
+          await removeRecipe();
+          window.location.reload();
         }}
-        className={`fa-sharp fa-heart ${clicked ? 'fa-solid' : 'fa-regular'}`}
+        className="fa-regular fa-circle-xmark"
       ></i>
 
       <img
@@ -45,4 +42,4 @@ const Card: FC<RecipeCard> = ({ recipe }) => {
   );
 };
 
-export default Card;
+export default FavCard;

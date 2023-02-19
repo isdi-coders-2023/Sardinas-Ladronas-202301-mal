@@ -43,6 +43,7 @@ describe('Given a reducer function', () => {
             strMeasure13: '',
             strMeasure14: '',
             strMeasure15: '',
+            id: '',
           },
         ],
         {

@@ -1,0 +1,12 @@
+.recipe-cards {
+  display: flex;
+  gap: 3rem;
+  padding: 1.2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 376px) {
+  .recipe-cards {
+    flex-direction: column;
+  }
+}
