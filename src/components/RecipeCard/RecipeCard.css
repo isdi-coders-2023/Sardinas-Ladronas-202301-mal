@@ -4,6 +4,11 @@
   flex: 20%;
 }
 
+.recipe-card__link {
+  color: #f8693a;
+  text-decoration: none;
+}
+
 .recipe-card__img {
   width: 100%;
   border-radius: 10px;
@@ -36,6 +41,10 @@
 }
 
 /* STARS */
+
+input[type="radio"] {
+  display: none;
+}
 
 .recipe-card__rating {
   display: flex;
@@ -74,10 +83,6 @@
 }
 
 @media (max-width: 376px) {
-  .recipe-card__rating {
-    justify-content: center;
-  }
-
   .recipe-card__title {
     text-align: center;
     font-size: 1rem;

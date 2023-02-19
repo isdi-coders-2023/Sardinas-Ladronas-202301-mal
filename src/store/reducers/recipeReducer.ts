@@ -8,6 +8,8 @@ const recipeReducer = (
   switch (action.type) {
     case ActionTypes.LIST_RECIPES_BY_LETTER:
       return [...action.payload];
+    case ActionTypes.GET_RECIPE_DETAIL:
+      return [...action.payload];
     default:
       return [...previousRecipes];
   }

@@ -4,7 +4,7 @@ import { meal } from '../../mocks/mealMock';
 
 describe('Given a recipe card component', () => {
   test('When card is rendered, it should show a recipe img', () => {
-    render(<DetailHeader recipe={meal.meals[0]} />);
+    render(<DetailHeader recipes={meal.meals} />);
     const imgElement = screen.getByAltText('recipe img');
     const titleElement = screen.getByRole('heading');
 
