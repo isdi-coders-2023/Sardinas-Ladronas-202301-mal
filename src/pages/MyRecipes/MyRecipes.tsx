@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import FavRecipeCardList from '../../components/FavRecipeCardList/FavRecipeCardList';
+import Pagination from '../../components/Pagination/Pagination';
+
+import useGetFavRecipes from '../../hooks/useGetFavRecipes/useGetFavRecipes';
 
 const MyRecipes = () => {
+  const { recipes, getFavRecipes } = useGetFavRecipes();
+  useEffect(() => {
+    getFavRecipes();
+  }, [getFavRecipes]);
   return (
-    <div>
-      <h1>MY RECIPES PAGE</h1>
-    </div>
+    <>
+      <Pagination />
+      <FavRecipeCardList recipeList={recipes} />
+    </>
   );
 };
 

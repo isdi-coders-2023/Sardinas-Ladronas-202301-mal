@@ -35,4 +35,5 @@ export interface Recipe {
   strMeasure13: string;
   strMeasure14: string;
   strMeasure15: string;
+  id: string;
 }

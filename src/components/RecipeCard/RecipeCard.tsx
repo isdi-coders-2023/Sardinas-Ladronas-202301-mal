@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
+import useAddFavRecipes from '../../hooks/useAddFavRecipes/useFavRecipes';
 import { Recipe } from '../../models/recipe.r';
 import './RecipeCard.css';
 import { Link } from 'react-router-dom';
@@ -7,10 +8,20 @@ interface RecipeCard {
 }
 
 const Card: FC<RecipeCard> = ({ recipe }) => {
+  const { addRecipe } = useAddFavRecipes(recipe);
+  const [clicked, setClicked] = useState(false);
+  const showClicked = () => {
+    setClicked(!clicked);
+  };
   return (
     <>
-      <i className="fa-sharp fa-regular fa-heart"></i>
-      <i className="fa-sharp fa-solid fa-heart"></i>
+      <i
+        onClick={() => {
+          showClicked();
+          addRecipe();
+        }}
+        className={`fa-sharp fa-heart ${clicked ? 'fa-solid' : 'fa-regular'}`}
+      ></i>
       <Link className="recipe-card__link" to={`/detail/${recipe.idMeal}`}>
         <img
           className="recipe-card__img"
