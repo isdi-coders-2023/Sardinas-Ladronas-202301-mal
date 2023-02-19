@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+.app-container {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
 /*------------------- FONTS -------------------*/
 
 /* INTER */
