@@ -3,18 +3,18 @@ import { Recipe } from '../../models/recipe.r';
 import './DetailHeader.css';
 
 interface RecipeCard {
-  recipe: Recipe;
+  recipes: Recipe[];
 }
 
-const DetailHeader: FC<RecipeCard> = ({ recipe }) => {
+const DetailHeader: FC<RecipeCard> = ({ recipes }) => {
   return (
     <div className="header-container">
       <i id="fa-heart" className="fa-sharp fa-regular fa-heart"></i>
       <i id="fa-heart" className="fa-sharp fa-solid fa-heart"></i>
-      <h1 className="header-container__title">{recipe.strMeal}</h1>
+      <h1 className="header-container__title">{recipes[0]?.strMeal}</h1>
       <img
         className="header-container__img"
-        src={recipe.strMealThumb}
+        src={recipes[0]?.strMealThumb}
         alt="recipe img"
       />
     </div>

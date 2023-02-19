@@ -1,0 +1,17 @@
+.detail__reagents {
+  display: flex;
+  gap: 1.5rem;
+}
+.ingredient {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.1rem;
+  text-transform: capitalize;
+}
+.data__measures {
+  font-family: var(--secondary-font-bold);
+}
+.measure {
+  padding: 0.1rem;
+}
