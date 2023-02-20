@@ -20,9 +20,9 @@ const NavBar = () => {
           <ul
             className={sidebar ? 'nav-menu__items active' : 'nav-menu__items'}
           >
-            {SidebarData.map((item, index) => {
+            {SidebarData.map((item) => {
               return (
-                <li key={index} className={item.cName}>
+                <li key={item.title} className={item.cName}>
                   <Link to={item.path}>
                     <span>{item.title}</span>
                   </Link>

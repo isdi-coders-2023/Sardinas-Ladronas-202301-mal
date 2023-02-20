@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './DetailReagents.css';
-import { FC } from 'react';
 import * as GoIcons from 'react-icons/go';
 import { Recipe } from '../../models/recipe.r';
 
